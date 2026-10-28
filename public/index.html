@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Штаб Барбершоп · Чоловічі стрижки в Сумах</title>
+  <meta name="description" content="Барбершоп «Штаб» у Сумах на вул. Воскресенській, 15. Стрижка від 500 ₴, оформлення бороди, гоління голови шейвером, тонування. Щодня з 9:00 до 19:00, запис онлайн.">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:site_name" content="Штаб Барбершоп">
+  <meta property="og:title" content="Штаб Барбершоп · Суми">
+  <meta property="og:description" content="Командний пункт твого стилю. Стрижки, борода та гоління щодня з 9:00 до 19:00 на вул. Воскресенській, 15.">
+  <meta property="og:url" content="https://maksymzui.github.io/shtab.barbershop/">
+  <meta property="og:image" content="https://maksymzui.github.io/shtab.barbershop/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Логотип барбершопу «Штаб» і старший барбер Станіслав Таран">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css?v=1">
+  <script>
+    // Hides the hero until the intro timeline takes over; never longer than 3 s if scripts fail.
+    document.documentElement.classList.add('js', 'js-anim');
+    setTimeout(function () { document.documentElement.classList.remove('js-anim'); }, 3000);
+  </script>
+  <script defer src="assets/js/vendor/gsap.min.js"></script>
+  <script defer src="assets/js/vendor/ScrollTrigger.min.js"></script>
+  <script defer src="assets/js/vendor/SplitText.min.js"></script>
+  <script defer src="assets/js/vendor/ScrambleTextPlugin.min.js"></script>
+  <script defer src="assets/js/main.js?v=1"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "Штаб Барбершоп",
+    "description": "Чоловічий барбершоп у Сумах: стрижки, оформлення бороди, гоління голови шейвером, тонування та укладка.",
+    "telephone": "+380753050073",
+    "priceRange": "150–800 UAH",
+    "currenciesAccepted": "UAH",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "вул. Воскресенська, 15",
+      "addressLocality": "Суми",
+      "addressRegion": "Сумська область",
+      "postalCode": "40000",
+      "addressCountry": "UA"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    }],
+    "sameAs": [
+      "https://www.instagram.com/shtab.barbershop/",
+      "https://www.threads.com/@shtab.barbershop"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Як записатися до барбера?", "acceptedAnswer": { "@type": "Answer", "text": "Найшвидше онлайн: обираєш послугу, майстра і зручний час. Також можна подзвонити за номером 075 305 00 73 або написати нам у Direct в Instagram." } },
+      { "@type": "Question", "name": "Скільки коштує чоловіча стрижка?", "acceptedAnswer": { "@type": "Answer", "text": "Стрижка у барбера коштує 500 ₴, у старшого барбера 600 ₴. Стрижка з бородою коштує 700 ₴ та 800 ₴ відповідно." } },
+      { "@type": "Question", "name": "Чим барбер відрізняється від старшого барбера?", "acceptedAnswer": { "@type": "Answer", "text": "Досвідом, від якого залежить вартість послуг. Старші барбери: Станіслав, Аліна та Ірма. Барбер: Юлія." } },
+      { "@type": "Question", "name": "Скільки триває стрижка?", "acceptedAnswer": { "@type": "Answer", "text": "Близько години. Стрижка з бородою займає до півтори години, оформлення бороди близько 30 хвилин." } },
+      { "@type": "Question", "name": "Ви працюєте у вихідні?", "acceptedAnswer": { "@type": "Answer", "text": "Так, ми працюємо щодня з 9:00 до 19:00 без вихідних." } },
+      { "@type": "Question", "name": "Чи можна обрати конкретного майстра?", "acceptedAnswer": { "@type": "Answer", "text": "Так. Під час запису онлайн обери барбера зі списку. Якщо майстер неважливий, система запропонує першого вільного." } },
+      { "@type": "Question", "name": "На скільки днів наперед можна записатися?", "acceptedAnswer": { "@type": "Answer", "text": "Запис онлайн відкритий на 30 днів уперед." } },
+      { "@type": "Question", "name": "Чи є подарункові сертифікати?", "acceptedAnswer": { "@type": "Answer", "text": "Так. Сума на твій вибір, сертифікат діє 6 місяців на всі послуги та продукцію. Замовити можна за телефоном 075 305 00 73." } },
+      { "@type": "Question", "name": "Де ви знаходитесь?", "acceptedAnswer": { "@type": "Answer", "text": "Суми, вулиця Воскресенська, 15." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="i-arrow-up-right" viewBox="0 0 256 256"><path d="M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"/></symbol><symbol id="i-arrow-right" viewBox="0 0 256 256"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"/></symbol><symbol id="i-phone" viewBox="0 0 256 256"><path d="M224,154.8l-47.09-21.11-.18-.08a19.94,19.94,0,0,0-19,1.75,13.08,13.08,0,0,0-1.12.84l-22.31,19c-13-7.05-26.43-20.37-33.49-33.21l19.06-22.66a11.76,11.76,0,0,0,.85-1.15,20,20,0,0,0,1.66-18.83,1.42,1.42,0,0,1-.08-.18L101.2,32A20.06,20.06,0,0,0,80.42,20.15,60.27,60.27,0,0,0,28,80c0,81.61,66.39,148,148,148a60.27,60.27,0,0,0,59.85-52.42A20.06,20.06,0,0,0,224,154.8ZM176,204A124.15,124.15,0,0,1,52,80,36.29,36.29,0,0,1,80.48,44.46l18.82,42L80.14,109.28a12,12,0,0,0-.86,1.16A20,20,0,0,0,78,130.08c9.42,19.28,28.83,38.56,48.31,48A20,20,0,0,0,146,176.63a11.63,11.63,0,0,0,1.11-.85l22.43-19.07,42,18.81A36.29,36.29,0,0,1,176,204Z"/></symbol><symbol id="i-map-pin" viewBox="0 0 256 256"><path d="M128,60a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,60Zm0,64a20,20,0,1,1,20-20A20,20,0,0,1,128,124Zm0-112a92.1,92.1,0,0,0-92,92c0,77.36,81.64,135.4,85.12,137.83a12,12,0,0,0,13.76,0,259,259,0,0,0,42.18-39C205.15,170.57,220,136.37,220,104A92.1,92.1,0,0,0,128,12Zm31.3,174.71A249.35,249.35,0,0,1,128,216.89a249.35,249.35,0,0,1-31.3-30.18C80,167.37,60,137.31,60,104a68,68,0,0,1,136,0C196,137.31,176,167.37,159.3,186.71Z"/></symbol><symbol id="i-clock" viewBox="0 0 256 256"><path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm68-84a12,12,0,0,1-12,12H128a12,12,0,0,1-12-12V72a12,12,0,0,1,24,0v44h44A12,12,0,0,1,196,128Z"/></symbol><symbol id="i-instagram" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,72a24,24,0,1,1,24-24A24,24,0,0,1,128,152ZM176,20H80A60.07,60.07,0,0,0,20,80v96a60.07,60.07,0,0,0,60,60h96a60.07,60.07,0,0,0,60-60V80A60.07,60.07,0,0,0,176,20Zm36,156a36,36,0,0,1-36,36H80a36,36,0,0,1-36-36V80A36,36,0,0,1,80,44h96a36,36,0,0,1,36,36ZM196,76a16,16,0,1,1-16-16A16,16,0,0,1,196,76Z"/></symbol><symbol id="i-threads" viewBox="0 0 256 256"><path d="M188.84,120.46a68.14,68.14,0,0,0-10-6.23c-3.72-21.68-16.41-37.41-35.52-43.2C121.94,64.55,97.29,72.42,86,89.34a12,12,0,0,0,20,13.32c5.47-8.2,19.11-12.08,30.41-8.66a24.72,24.72,0,0,1,14.88,12.24,86.73,86.73,0,0,0-8.86-.45C108.56,105.79,84,125.22,84,152c0,22.9,17.54,39.52,41.71,39.52a52,52,0,0,0,37.23-16c6-6.23,12.88-16.46,15.72-32.07,6.2,6.42,9.34,14.67,9.34,24.59,0,17.74-19.07,44-60,44-45.76,0-68-27.48-68-84s22.24-84,68-84c31.08,0,51,12.42,60.8,38a12,12,0,0,0,22.4-8.62C197.77,38.44,169,20,128,20,68.67,20,36,58.35,36,128s32.67,108,92,108c31.36,0,51.08-12.05,62.11-22.15C203.81,201.28,212,184.14,212,168,212,148.36,204,131.92,188.84,120.46Zm-43.2,38.39a27.9,27.9,0,0,1-19.93,8.67c-8.17,0-17.71-4.06-17.71-15.52,0-15.26,17.84-22.21,34.41-22.21a60.23,60.23,0,0,1,13.51,1.52C155.36,142.93,151.84,152.41,145.64,158.85Z"/></symbol><symbol id="i-navigation" viewBox="0 0 256 256"><path d="M238.7,102.46,62.81,37.21l-.25-.09A20,20,0,0,0,37.12,62.56l.09.25L102.46,238.7A20,20,0,0,0,121.3,252h.35a20,20,0,0,0,18.77-14.12l.09-.29,21.23-75.85,75.85-21.23.29-.09a20,20,0,0,0,.82-38Zm-89.93,38a12,12,0,0,0-8.32,8.32l-19.68,70.29L62.8,62.8l156.26,58Z"/></symbol><symbol id="i-play" viewBox="0 0 256 256"><path d="M240,128a15.74,15.74,0,0,1-7.6,13.51L88.32,229.65a16,16,0,0,1-16.2.3A15.86,15.86,0,0,1,64,216.13V39.87a15.86,15.86,0,0,1,8.12-13.82,16,16,0,0,1,16.2.3L232.4,114.49A15.74,15.74,0,0,1,240,128Z"/></symbol><symbol id="i-pause" viewBox="0 0 256 256"><path d="M216,48V208a16,16,0,0,1-16,16H160a16,16,0,0,1-16-16V48a16,16,0,0,1,16-16h40A16,16,0,0,1,216,48ZM96,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V48A16,16,0,0,0,96,32Z"/></symbol><symbol id="i-send" viewBox="0 0 256 256"><path d="M230.14,25.86a20,20,0,0,0-19.57-5.11l-.22.07L18.44,79a20,20,0,0,0-3.06,37.25L99,157l40.71,83.65a19.81,19.81,0,0,0,18,11.38c.57,0,1.15,0,1.73-.07A19.82,19.82,0,0,0,177,237.56L235.18,45.65a1.42,1.42,0,0,0,.07-.22A20,20,0,0,0,230.14,25.86ZM156.91,221.07l-34.37-70.64,46-45.95a12,12,0,0,0-17-17l-46,46L34.93,99.09,210,46Z"/></symbol></svg>
+  <a class="skip-link" href="#main">Перейти до змісту</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Головна навігація">
+      <a class="nav__logo" href="#top" aria-label="Штаб Барбершоп, на початок сторінки">
+        <img src="assets/img/logo.svg" alt="" width="829" height="408">
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="#prices" data-nav>Ціни</a></li>
+        <li><a href="#works" data-nav>Роботи</a></li>
+        <li><a href="#team" data-nav>Барбери</a></li>
+        <li><a href="#faq" data-nav>Питання</a></li>
+        <li><a href="#contacts" data-nav>Контакти</a></li>
+      </ul>
+      <a class="btn btn--gold btn--sm nav__cta" href="https://blknt.cc/ae1f47dc" target="_blank" rel="noopener">Записатися</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Відкрити меню" data-menu-toggle>
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="menu" id="menu" hidden data-menu>
+    <nav aria-label="Мобільна навігація">
+      <ul class="menu__links" role="list">
+        <li data-menu-item><a href="#prices">Ціни</a></li>
+        <li data-menu-item><a href="#works">Роботи</a></li>
+        <li data-menu-item><a href="#team">Барбери</a></li>
+        <li data-menu-item><a href="#faq">Питання</a></li>
+        <li data-menu-item><a href="#contacts">Контакти</a></li>
+      </ul>
+    </nav>
+    <div class="menu__foot">
+      <a class="btn btn--gold btn--lg" href="https://blknt.cc/ae1f47dc" target="_blank" rel="noopener" data-menu-item>
+        Записатися онлайн
+        <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+      </a>
+      <a class="btn btn--ghost btn--lg" href="tel:+380753050073" data-menu-item>
+        <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+        075 305 00 73
+      </a>
+      <p class="menu__meta" data-menu-item>Щодня з 9:00 до 19:00 · вул. Воскресенська, 15</p>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="hero__logo"><svg role="img" aria-labelledby="logo-title" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 829 408"><title id="logo-title">Штаб Барбершоп</title><g fill-rule="evenodd" class="logo-word"><path d="M70.2 6.8c-.8.9-.7 3.8.2 5.2.5.6 2.4 4.2 4.3 7.8l3.5 6.7-.1 89.7c0 89.4-.1 89.6-.7 91.1l-2.1 4.9c-.7 1.8-2.4 5.4-3.6 8-2.3 4.6-2.4 4.7-2.1 6.4l.5 1.9a286 286 0 0 0 21.6-5l7.8-1.8c14-3.2 15.7-3.6 35.5-7.7l5.2-1 3.1-.7 18.7-3.5a815 815 0 0 1 31.3-5.1 1476 1476 0 0 1 95.5-11.6c8.3-.6 8.3-.6 8.1-3.4-.1-1.3-.4-2-1.2-3l-4.3-6.4-3.2-5.1v-146l3.4-5.7 4-6.5c1.2-1.6 1.5-3.3.7-4-.6-.6-1.2-.7-8-.7l-29.1-.3-21.7-.4-.5.7c-.7.8-.4 3.1.5 4 .5.6 5.7 9.5 6.8 11.6l.7 1.4v67.2c0 60.5-.1 67.2-.5 67.6-.7.7-.2.7-14.7 2.2-23.4 2.6-22.2 2.5-22.7 2s-.7-138.1-.2-139.7c.5-1.2 5.6-10.1 7-12.1a6 6 0 0 0 1.2-3.1q.1-2.2-1.8-2.1l-20.1-.4-29.1-.7-9.7-.3-.4.8q-.9 1.6 1.5 5.2l4.2 7.4 2.8 5.2v73.1c0 65-.1 73.1-.5 73.6q-.4.5-11.5 2.3l-15.3 2.7c-11.3 2.1-11.8 2.1-12 1.1-.1-.5-.2-35.1-.1-77l.1-76.1 1.4-2.5 1.4-2.6c0-.3 3-5.5 4.5-7.8q2.5-3.7 1.4-5.4c-.4-.6-1.3-.7-12.3-.9l-16.9-.5-17-.5-13.4-.5q-1.7-.1-2.1.3" class="logo-letter" data-l="sh"/><path d="M303 21.4c-.3.2-.8 1.2-1.1 2.1-.6 1.6-.6 1.7.4 4.6l3.3 10.4 1.9 6 2.1 7.2c2.4 8.3 2.8 9.5 3.5 10.1 1.6 1.3 3.3-.1 11.6-9.3 3.1-3.4 1.4-3.1 16.9-3.2 7.5 0 13.8.1 14 .2.3.1.4 16.9.4 60.4v60.2l-3.2 5.2-4.5 7a6 6 0 0 0-1.5 3.3c-.3 2.4-.1 2.5 5.8 2.3l45.1-1.5 9.4-.2.3-1.2c.4-1.5-.1-2.5-2.3-5.7a118 118 0 0 1-6.2-10.1c-.4-.9-.3-119.3.1-119.6.1-.2 6.4-.3 14-.3h13.8l.8.8 2.5 2.7 6.9 8c1.1 1.2 1.4 1.3 2.8 1.3q1.5 0 2-.5a80 80 0 0 0 3.9-12.3 484 484 0 0 1 6-19.5c1.2-3.5 1.6-6.6.9-7.6-.5-.6-1.5-.7-45.5-.7l-74.3-.3c-23.6-.2-29.4-.1-29.8.2" class="logo-letter" data-l="t"/><path d="m505.5 21.3-31.8.3v2.2c.1 1.7.4 2.3 1.4 3.7.6.9 1.6 2.8 2.2 4.2l1.4 2.9c.7.7.4 2.3-1.3 7.2l-3.3 9.8-2.1 6.5-2.1 6.4c-3.8 11.9-10.1 31-11.1 33.8l-13 39.2c-1 3.5-4.6 14.5-5.2 16l-2.7 8.2a51 51 0 0 1-3.1 8.1l-4.3 5.7-4.3 5.5c-.9 1-1.4 3.7-.9 4.7.4.6.8.6 7.3.6 7.5 0 24.4.5 41 1.1 11.8.4 11.4.5 11.4-2.1 0-1.4-.2-1.9-1.3-3.2A57 57 0 0 1 477 170c0-.9 3.5-13.4 6-21.2l2-6.6c.8-2.6 1.7-5 2-5.3.6-.7.9-.7 12.7-.1 26.6 1.2 36.3 1.8 36.8 2.2a183 183 0 0 1 4.3 14.5l3.9 14.2 1.2 4.2.4 2.3c0 .9-4.7 9-6.6 11.4-1.3 1.7-1.8 4.3-1 5 .5.4 3 .7 13.3 1.6 12.5 1 29.2 2.8 39.5 4.1q9.6 1.2 10.5 1.1c1.2-.3 1.4-2.5.3-4-.5-.5-1.2-1.6-1.7-2.3a98 98 0 0 1-8.8-14.1c-.8-3.1-2.1-7.4-2.8-9.5l-1.8-6.2-2.7-8.8-9.4-30.2-2.1-6.8-1.7-5.5-3-9.5-4.5-14-5.5-17.2-4.6-14.6a192 192 0 0 0-4-12.7l-1.2-3.8c-.3-.6-.5-1.6-.5-2 0-.8 2.8-7.4 4.2-9.8 1-1.7 1.4-4.2.8-4.9-.4-.4-1.6-.5-8.1-.4zm4.6 37.1-2.8 8.9-5.5 18.4-2.6 8.8-2.3 7.5c-2.1 6.7-2.2 7.3-1.1 7.5l10.7.3 15.8.5c7.2.4 7.1.5 6-3l-1.3-4.5-1.3-4.3-2-7a193 193 0 0 1-3.6-12.2l-1.3-4.5-1.1-4-5.5-17.1c-.6 0-.9.5-2.1 4.7" class="logo-letter" data-l="a"/><path d="M763 6.5c-.6.6-86.5 3.3-129.6 4.2q-16.9.3-17.2.6c-.7.8-.3 3 .9 4.8a122 122 0 0 1 5.6 9.9c1.4 2.2 1.3-2.2 1.3 79v76.8l-2.1 3.2-3.4 5.3c-.7 1.2-1.7 2.8-2.3 3.5-1.2 1.5-1.6 4.4-.8 5.1.6.5 5.8 1.5 14 2.6A1448 1448 0 0 1 714 217c18.4 4 20.5 4.2 26.3 3.1a28 28 0 0 0 22.6-20.8l.9-3.1v-79.7l-.9-3.7a46 46 0 0 0-23.1-28 33 33 0 0 0-14.5-3.6l-18-1.2c-13.4-1-32.1-2.2-36.4-2.4-1.8-.1-2.4-.3-2.8-.8-.7-1-.5-35 .2-35.5.6-.3 67.7-.4 68.2 0l2.3 2.7c9.1 12.1 8.4 11.3 11 11.3s2.7-.2 3.4-2.7c.8-3.4 2.8-10.2 3.3-11.5l.8-2.6c.3-1.2 2.2-7.9 4.4-14.8l.6-2.5 1.5-4.9c1.4-4.2 1.5-4.7 1.3-6.8q-.2-2.3-.7-2.7-1-.7-1.4-.3m-94.8 102.4c-.5.4-.5 3.9-.5 32.8 0 30.2 0 32.3.6 32.9s2.1 1 17.2 3.3l11.3 1.9c11 2 10.6 2 12.8 1.5a10 10 0 0 0 7.6-5.9l.8-1.9.1-24.8.1-24.9-.8-2.1c-2.5-6.4-6.1-9.3-13.2-10.2-4-.5-5.4-.6-19.9-1.8l-11.1-1c-4.2-.5-4.4-.5-5 .2" class="logo-letter" data-l="b"/></g><g fill-rule="evenodd" class="logo-ribbon"><path d="M389 221.2a1732 1732 0 0 0-78.2 3.8c-17.6 1.2-42.5 3.7-64.6 6.5l-15 1.9c-5.4.6-19.9 2.6-27.4 3.8l-8.8 1.3-10 1.5-7.3 1.2c-4.8.7-11.1 1.8-11.4 2l-4 .8c-7.6 1.3-19.6 3.6-24 4.5l-4 .8-4.6 1-8.7 1.8-11.3 2.6-8 1.8-12.7 3-6.3 1.6q-1.3.3-1.6.8c-.1.2.1 2.3.4 4.7 1.2 10.1 1.5 12.6 1.8 16.5.2 2.2.5 5.3.8 6.9.4 3.3.3 3.4-2.7 4l-12.2 2.7-15.4 3.5-3.3.7-4.7 1.1c-3.3.8-18.6 4.6-24.5 6.2l-13.4 3.6q-1.4.3-1.7.8 0 .5 2.1 2.5a1406 1406 0 0 1 34.2 33.2q.2.7-1.8 4.1l-3.5 6.3-3.3 6-4.2 7.8-2.7 5-6.2 11.3-1.8 3.4-2.7 5c-2.3 4.7-2.7 6.1-1.4 5.7.3-.2 2.3-.7 4.4-1.2l11.7-3c15.7-4 43.6-10.8 55.3-13.5l21-4.6 9.7-1.9 9.2-1.9a94 94 0 0 0 9.8-2l4.5-.8 8-1.5c2.7-.5 5.3-1 5.7-1.2l4.4-.8q3.8-.5 4.1-1.1.2-.8-.2-4.4l-2.9-24.8c-.5-3.3-1.3-2.9 10.2-5 7.5-1.4 9.6-1.8 11.4-2l4.1-.7 8-1.3a1080 1080 0 0 1 37-5.5l7.4-1 3.8-.5 12.7-1.5c10.6-1.3 14.6-1.7 22.1-2.4l8.7-.8 9.3-.8 8-.7 8.5-.7 8.7-.6 10.2-.7 14.6-.8a1347 1347 0 0 1 184.7 2.5l9.2.8c11.3.9 19.7 1.8 27.5 2.7l7.1.8 17.7 2.2 8.5 1.1 7.5 1 6.7 1 8 1.2 13 2 10.1 1.6 6.2 1.1 18.3 3q1.5.2 2.5 1c.8.7.8.7.4 3l-.7 5.6-1.3 11c-.6 4.3-1 8.8-1.1 10.2l-.1 2.5 1.3.4c.7.3 2.7.7 4.3.9l6.6 1.2 5.3 1a1335 1335 0 0 1 38.3 7.7l11.4 2.5 12.3 2.6a2443 2443 0 0 1 67.9 16.8q2.1.3.3-2a239 239 0 0 0-10.3-19.4l-9.4-17.6-1.2-2.2-1.8-3.2-3.5-6.3c-1.6-3.1-1.7-3.3-1.2-4 .8-1.1 5.7-6.1 13.3-13.4a341 341 0 0 0 22-22.2c-.3-.2-5.1-1.7-8.6-2.6l-10.8-3-7.2-1.9-8.3-2-6.9-1.7-10.3-2.4-6.5-1.5-15.5-3.4c-2.9-.7-3.5-1.2-3.2-2.6l.7-6.5 1-9q1.5-10.4 1.5-12.8v-1.5l-2.2-.7c-3.4-1-6.9-1.9-15.1-3.7l-9-2.1-7.5-1.7c-1.4-.2-2.9-.6-8.2-1.8-5.1-1.3-7.5-1.8-10-2.2l-10.7-2.2c-13.7-2.8-28.9-5.6-34.6-6.5l-6-1-6.2-1-4.2-.7-3.8-.6-8.5-1.3c-4.6-.8-8.1-1.2-24.2-3.4l-12-1.5-10.6-1.3a1300 1300 0 0 0-111.2-8.1c-5.6-.3-65.5-.6-77-.4m9.8 7.2a1238 1238 0 0 0-101.1 4.9c-18.2 1.4-49.4 4.6-60.4 6.2l-7.8 1-9 1.2-18.5 2.8-6 1a536 536 0 0 0-26 4.2l-7.3 1.3-8.4 1.5-14.5 2.9a464 464 0 0 0-22 4.6l-8 1.7-8.8 2-8.5 2-3.5 1.1c-.5.4-.5 1 1.5 17.2l1.2 10.8 1.2 10.2.8 6.5.8 6a329 329 0 0 0 2.7 24.6c.3.7 1.2.7 3.8 0l3.6-.8 5.6-1.2 8.3-1.9 6-1.4 7-1.4 7.5-1.6 6.2-1.1 6.3-1.2 18.7-3.3 2.9-.6c2.8-.7 12.5-2.4 19.6-3.4l5.6-.9 7.9-1.1 8.6-1.4 11-1.5 11.4-1.5 10.6-1.3 12-1.5a1440 1440 0 0 1 110.9-8.3 1235 1235 0 0 1 117.6 1l11.4.6a970 970 0 0 1 54.1 4.4l9.2 1c3.9.3 9.4.9 12.2 1.3l8.8 1.2c5.6.6 13.7 1.7 20.3 2.7l16.4 2.3 4.3.6 4.2.7a666 666 0 0 1 34 5.7l6.1 1.1 14.4 2.7 7.5 1.5 6.6 1.3 6.7 1.4 5.5 1.1 12.3 2.9c5.1 1.2 9.9 2.2 10.7 2.2q1.3 0 1.3-2.1l.5-4.8a614 614 0 0 0 3-26.5 569 569 0 0 0 3.9-34.8c.2-.9.4-3.1.5-4.7l.2-3.1-1.1-.4-3.3-.8-8.8-2a851 851 0 0 0-34.9-7.7c-4.2-1-7-1.5-12.5-2.5l-8.5-1.6-8-1.6-14.6-2.6-7-1.2-14.5-2.3a1060 1060 0 0 0-43-5.9c-1.8-.2-6.2-.8-9.8-1.1l-12.4-1.4-27.5-2.5-11.5-.8a1302 1302 0 0 0-79.8-3.7c-13.7-.3-17.6-.3-46.4.1M82.6 300.5l-2.1.5c-2.9.5-14.8 3.2-23.2 5.2l-6.1 1.5-8.9 2.1a136 136 0 0 1-11 2.7l-3.3.8a40 40 0 0 0-8 2.4c-.4.6-.1.9 3.7 4.5l12.6 12.1 11.9 11.5c1.5 1.5 2.8 2.9 2.8 3.2 0 .5-3.5 7.5-4.3 8.5l-1.3 2.2-3.3 6a599 599 0 0 0-11.9 22.1c-3.3 5.9-3.3 5.8-3 6.2s.9.4 5.8-.9c6-1.6 14-3.6 19.7-4.9l12.3-3 10.5-2.5 5.8-1.4c4.1-1.1 10.9-2.6 16-3.6l9.7-2c10.4-2.2 28-5.7 30.5-6 3.7-.6 4.3-.8 4.3-1.5q0-.7-1.1-1l-2.4-.6a479 479 0 0 1-20.6-6.4l-5-1.5-13-4.1c-8.8-2.5-9-2.7-9-3.9 0-1.3-.7-8.5-1.2-12l-1.3-11.9-1.4-12-.8-7.5c-.3-4.3-.6-5-2.1-5zm663.4.4-.7 3.8-.8 6.8-.8 7.3-.7 6.2-.7 5.8-.8 7.2-1 7.6c-.4 4-.9 5.1-2.5 5.1-.3 0-2.1.4-4 1l-5.2 1.5-5.1 1.5-6.2 2-4.5 1.3-4.8 1.5-8.5 2.7-8 2.5c-1.3.4-2.4.8-2.5 1-.4.6.9 1.2 2.9 1.4l3.4.6 5.2 1 15.6 3 5.7 1.2a576 576 0 0 1 25 5.4l9 2.2 18 4.3 8.5 2.2c10.5 2.6 17.2 4.3 18.7 4.9 2.8 1 3.1.1 1-3.5l-3.1-6-2.5-4.6c-.9-1.4-1.8-3.1-6.4-11.8l-5-9.2a38 38 0 0 1-5-10.2c.4-.7 22.8-22.7 27.1-26.6q3.8-3.6 3.6-4.1c-.1-.7-2.6-1.5-15.7-4.7l-8-2-9.4-2.2-13.5-3.2q-12-2.8-16.4-3.3c-1.3-.2-1.6-.1-1.9.4m-595.7 37.6-5 1.1a866 866 0 0 0-34.7 7.2c-2.8.4-2.6 1.7.2 2.4l5 1.5 9 2.8 6.9 2.2 6 1.8 10.1 3.2c4.8 1.6 6 1.9 6.4 1.6.6-.5.6.3-.5-12.3l-.7-8.7q0-1.7-.7-2.3c-.6-.6-1.6-.9-2-.5m528.9.3q-.5.3-.8 3.2l-.9 7.5-1 8.3-.3 4.1c.4.9.4.8 13.1-3.2l10-3.2 3.7-1.2c3.9-1.3 15.9-4.9 17.1-5.1 1.5-.3 2.9-1.3 2.4-1.9-.2-.2-1.4-.5-2.7-.7-1.2-.1-3-.5-3.9-.7l-5.4-1.2-13.3-2.9q-6.3-1.3-9.5-1.8c-1.2-.2-3.4-.6-4.8-1-3.1-.8-3-.8-3.7-.2" class="logo-frame"/><path d="M122.1 291.6q-4.6 1.7-5.2 5.9c-.7 4.8 3 8.5 8 8.1 4.7-.4 7.8-6 5.8-10.4-.8-1.8-1.9-2.8-4.1-3.5-2.3-.8-2.3-.8-4.5-.1" class="logo-char"/><path d="M191 264.5a362 362 0 0 1-22.3 4.1l-6.2 1.3c-4.2.7-4.3.8-4 2.9.3 2.3.6 2.5 2.7 2.5 2.3 0 2.8.6 3.2 3.9l.6 5 .8 6c.8 6 1.9 12.9 2.1 13.5.3 1.2-.8 2.6-2.4 3-.8.2-1.7.6-1.8 1-.5.8 0 4 .6 4.2.3.1 2.6-.2 5.2-.7 8.2-1.6 9.3-1.8 11-2 5.5-.7 11.3-2.4 13.7-4a12 12 0 0 0 5.5-12.5c-1.7-8.8-9.1-11.2-23.7-7.8-1.5.3-1.8-.5-2.6-5.5-1-5.7-.9-5.8 2.3-6.2l5.3-.9c5.6-1.1 6-1 6.8 2 .7 2.2 1.2 2.6 2.7 2.1q1-.4 2.1-.4c1.8 0 1.8-.4 1.1-5.6-.4-2.5-.9-4.9-1.1-5.3-.2-.7-1.2-1-1.6-.6m-12 25.4c-3.5.7-3.6.7-3.8 1.3-.1.3 0 2.1.3 3.9l.7 5.7c.2 1.8.7 3.2 1.3 3.2l4-.7c7.3-1.2 9.6-3.4 9.1-8.4q-.5-3.1-2.9-4.7c-1.4-1-4.9-1.1-8.7-.3" class="logo-char"/><path d="m237.3 257.7-6.8 1c-3.4.4-6.1.9-6.2 1.1q-.3.5-.3 2.2-.1 3.2 2 2.6 1-.3 1.7.4c.9.7.8 1.2-2.5 12.8l-2.2 8-1.7 6.5c-1 3.9-1.6 4.8-3.1 5.2l-1.8.6c-.6.4-.5 4.4 0 4.9.4.2 2.2.1 7.3-.7 10.1-1.5 9.2-1.2 9-3.1-.2-2.6-.7-3.2-2.9-3.2q-2 0-1.9-.6c-.3-.9 1.2-6.1 1.8-6.4.8-.5 13.3-2.1 14.2-1.8.7.1 3.1 4.2 3.1 5.2q-.2 1.2-2.4 1.9c-1.4.5-1.4.5-1.3 2.9.1 2.6.3 2.7 4.9 2l8-1c5-.5 5.2-.6 4.9-3.2-.2-2.1-.4-2.3-2.1-2.3q-1.2 0-2.1-.7a218 218 0 0 1-9-17.2 325 325 0 0 0-8.8-17c-.6-.5-.6-.5-1.8-.1m-3.1 10.7-.3 1.3-1 4.1a33 33 0 0 0-1.7 8.4c.3.6 1 .6 5.6-.1 4.8-.7 4.9-.8 3.6-3.5l-1.7-3.8q-2.7-6.9-3.7-6.8-.6 0-.8.4" class="logo-char"/><path d="M288 252.7c-8 .7-12.7 1.3-13.2 1.7s-.2 3.2.2 3.8q.5.4 2 .5c3.2.3 2.9-.8 4.2 16.8 1.1 15.4 1.2 14.5-1.5 15q-2.6.3-2.1 3.1c.3 2.8-.5 2.7 11.6 1.6 7.7-.8 7.3-.6 7.4-3.1s-.1-2.7-2.9-2.8c-2.8-.2-3.1-.6-3.3-6-.2-4.7-.4-4.5 5-5 10.5-.9 15.2-4 17-11.1 1-4.1-1.2-10.2-4.6-12.6-3.8-2.7-7.1-3-19.8-1.9m2.6 5.5c-2 .3-2 .4-1.4 7.3.7 7.9.4 7.5 5.3 6.9 4-.5 5.7-1 7-2.4 2.7-2.9 2.4-8.5-.7-10.9-1.2-.9-1.4-.9-5.1-1z" class="logo-char"/><path d="m351.7 248.2-14.7.8-8.1.5c-.4.3-.3 4 .2 4.4q.5.3 2 .5t2.2.7c.7.8 1 3.9 1 11.7 0 3.7.2 9.3.4 12.4l.3 5.6-.8.8q-.9.7-2.2.7a3 3 0 0 0-1.8.6c-.7.6-.7 4.2-.1 4.7s3.2.3 21.4-.9c5.7-.4 8.3-1.1 11.1-3 3.5-2.3 4.9-5.3 4.9-10.2q.1-6.9-5.8-10c-3.2-1.7-4.9-2-12-2-5.3 0-6.5-.1-6.7-.5a49 49 0 0 1-.3-10.1c.3-.4 4.5-.8 10.2-.9 3.9 0 4.1.1 4.4 2.8q.1 1.7.5 2.2c.7.5 5.1.5 5.6 0s.1-10.7-.5-11.1a51 51 0 0 0-11.2.3m-5.9 23.4c-2.5.2-2.5.1-2.5 6.8 0 7.5-.3 7.1 5.6 6.8 4.6-.2 6.1-.6 7.7-2.3 2.7-2.8 2.2-8.4-.9-10.4-1.1-.8-1.7-.9-4.7-1z" class="logo-char"/><path d="M392.9 246.6q-7.2 0-7.8.4c-.6.5-.6 3.7 0 4.4q.5.5 1.9.7c2.7.3 2.6-.4 2.9 15.8l.2 14.4-.9.8q-.8 1-2.3.9c-2 0-2.3.5-2.2 3.1l.1 2.1 17.7-.1c13.2-.1 17.7-.2 17.9-.5s.2-2.8.1-5.8c-.3-6.3-.2-6.2-3.6-6-2.8.2-3.1.4-3.4 3.3-.4 3.2-.4 3.2-7.8 3.2-5.9 0-6.4 0-6.7-.6a48 48 0 0 1 .1-12q.2-.3 6.2-.4c4.2 0 6-.1 6.3-.4.6-.6.5-5-.1-5.6-.4-.3-1.8-.3-6.1-.2-4.4.2-5.7.2-6.2-.2s-.6-1.1-.7-5.3c-.2-6.8-.6-6.4 6.9-6.5 6.9-.2 7.3 0 7.3 2.9 0 2.6.6 3.1 3.8 2.7l2.7-.2v-11h-9.5z" class="logo-char"/><path d="M439.5 246.8c-.6.3-.7 4-.1 4.4.2.2 1.1.5 1.9.6 2.6.3 2.4-.8 2.3 15.9-.1 17.1.1 15.9-3.2 16.3l-1.9.2-.2 2-.1 2.3c.3.7 17.8 1.3 18.8.7q.3-.4.3-2.2c0-2.4-.5-3-2.4-3-2.7 0-2.9-.4-2.9-5.4 0-2.5.1-4.7.3-4.9.3-.4 1.5-.5 6.8-.5 5.8 0 6.6-.1 8.1-.8 4.9-2 7.3-4.7 8.3-9a12.5 12.5 0 0 0-10.3-15.7c-4-.7-24.7-1.5-25.7-.9m13.4 6.6c-.4.6-.5 2.1-.6 6.9 0 5.7 0 6.2.6 6.6.9.7 9.2.5 10.6-.3 4.3-2.3 4.8-9.2.8-12.3-1.4-1.1-3.8-1.6-8.2-1.6-2.5 0-2.8 0-3.2.7" class="logo-char"/><path d="M493.7 249.2c-.5 1.2-.4 3 .1 3.6q.6.4 1.8.6c2.5.5 2.6.7 2.1 8.4-1 18-1.4 22.7-1.7 23.1q-.6.4-2 .4c-2.2 0-2.7.6-2.7 3q0 1.9.5 2.3c.2.2 4.8.6 10.2.9l13.2.9 25.5 1.9c10 .7 9.6.8 9.6-1.3l.2-1.9c.3-.9-.6-1.8-1.9-1.8q-1.1 0-1.9-.5c-.9-.6-.9-.2.1-13l.9-11.5c.4-6.2.6-6.6 2.7-6.6q2.6 0 2.6-2.8 0-1.3-.4-1.8c-.2-.2-2.5-.5-5.1-.8l-8-.7c-3.8-.3-4.2-.1-4.2 2 0 2.2.3 2.7 1.9 3.1q1.3.4 1.8.8c.5.6-.3 14.5-1.2 22.2l-.5 5.7c0 2.6-.1 2.7-5.3 2.3l-5.2-.4q-2 .2-1.4-4.1l.6-8.4c1.2-19.7 1.1-18.8 3-18.8q.9 0 1.4-.6c.8-.8.9-4 .3-4.4-.6-.3-5-.7-10.7-.8h-4.2l-.1 2.1c-.1 2.3.2 2.7 1.5 2.7 1.5 0 1.9 1 1.5 4.1-.2 1.5-.4 5-.5 7.7l-.5 8.5-.6 7.1c-.1 2.9-.3 3.7-.7 3.9-.5.3-8.8-.1-10.3-.5-1.1-.2-1.2-1-.6-10.2l.7-13.3c.3-7 .6-8 3.1-8 1.2 0 1.6-.4 1.8-2.5.4-2.6.4-2.6-6.3-2.8l-8.4-.5c-2.4-.2-2.4-.2-2.7.7" class="logo-char"/><path d="M584.5 257c-6.3 1.8-11.1 6-13.2 11.6-3.9 10.5-1.8 20.6 5.6 26.7q5.3 4.4 13.1 4.6 12.4.5 18.4-8.8c1.7-2.6 2-3.5 3.1-7.7 2.6-10-1.7-20.2-10.5-24.6a26 26 0 0 0-16.5-1.8m2.1 6.1q-6.2 3.1-7.8 11.5c-1.4 8.2.8 14.8 6.1 17.9 1.5.9 1.8 1 5.4 1 4.5 0 5.6-.4 7.9-2.7 3.3-3.3 5.3-10.7 4.5-16.6q-1.1-8-7.3-10.9a11 11 0 0 0-8.8-.2" class="logo-char"/><path d="M631.7 263.1c-.5.5-.5 3.7.1 4.2l1.7.7c2.4.6 2.5.9 2 5.7-.2 2.3-.6 4.8-.8 5.6-.2.9-.4 2.4-.4 3.4s-.2 3.1-.5 4.7l-.9 6.8c-.6 4.7-.9 5.1-3.6 5.1-2.2 0-2.4.2-2.8 2.7q-.3 1.6.2 1.8c.5.4 3.9 1.1 6.1 1.3l4.5.7c7.2 1.3 7.2 1.3 7.5.1q1-3.9-1.7-4.4c-2.7-.5-2.7-.9-1.8-7.1l1.9-13.5c1.4-10.1 1.5-10.4 3.3-10.1l11.6 2c2.9.5 3 .5 3 1.6a417 417 0 0 1-2.8 24.1c-.5 4.8-.9 5.5-3.3 5.3q-2.5-.5-2.8 2.4c-.2 2.1.2 2.4 3.8 2.9l7 1.3c2.1.4 4.4.7 5.1.7 1.3.1 1.3.1 1.8-1.6.6-2.3.3-2.7-1.5-3.2-2.8-.8-2.9-1.1-1.8-8.8l2.6-19.6q.3-4 3.2-3.4c2 .3 2.5-.2 2.8-2.6.2-2.2.1-2.4-3.2-2.7l-4.8-.7q-16.4-3-25.5-4.4c-2-.2-4.6-.7-5.9-.9-2.9-.6-3.5-.7-4.1-.1" class="logo-char"/><path d="M704.3 291.5c-5.4 2.6-5.8 9.3-.7 12.8 1.8 1.3 5.4 1.2 7.3 0 2.6-1.8 3.3-3 3.3-6.3 0-3.6-.8-4.9-4-6.4-2.5-1.1-3.5-1.2-5.9-.1" class="logo-char"/></g></svg></div>
+          <p class="hero__motto">
+            <span class="hero__motto-line" aria-hidden="true"></span>
+            <span class="hero__motto-text">Стиль. Догляд. Характер.</span>
+            <span class="hero__motto-line" aria-hidden="true"></span>
+          </p>
+          <h1 class="hero__title" id="hero-title">Командний пункт<br> твого стилю</h1>
+          <p class="hero__lead">Чоловічі стрижки, борода та гоління в Сумах. Щодня з 9:00 до 19:00 на вулиці Воскресенській, 15.</p>
+          <div class="hero__actions">
+            <a class="btn btn--gold btn--lg" href="https://blknt.cc/ae1f47dc" target="_blank" rel="noopener">
+              Записатися онлайн
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+            </a>
+            <a class="hero__phone" href="tel:+380753050073">
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+              075 305 00 73
+            </a>
+          </div>
+          <ul class="hero__facts" role="list">
+            <li><span class="status-dot" data-open-dot aria-hidden="true"></span><span data-open-status>Щодня з 9:00 до 19:00</span></li>
+            <li>Стрижка від 500&nbsp;₴</li>
+          </ul>
+        </div>
+
+        <figure class="hero__media">
+          <div class="hero__frame">
+            <picture>
+              <source media="(min-width: 1024px)" srcset="assets/img/hero-desktop-600.webp 600w, assets/img/hero-desktop-900.webp 900w" sizes="440px" width="900" height="1200">
+              <img src="assets/img/hero-720.webp" srcset="assets/img/hero-720.webp 720w, assets/img/hero-1080.webp 1080w" sizes="(min-width: 560px) 480px, calc(100vw - 32px)" width="1080" height="810" alt="Зала барбершопу «Штаб»: крісла, дзеркала, стіна з шевронами та архівні фото" fetchpriority="high" decoding="async">
+            </picture>
+          </div>
+          <span class="corner corner--tl" aria-hidden="true"></span>
+          <span class="corner corner--tr" aria-hidden="true"></span>
+          <span class="corner corner--bl" aria-hidden="true"></span>
+          <span class="corner corner--br" aria-hidden="true"></span>
+          <figcaption class="hero__chip">Штаб на Воскресенській, 15</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Services ticker -->
+    <div class="marquee" aria-hidden="true" data-marquee>
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span class="marquee__item">Стрижки</span><span class="marquee__dot"></span>
+          <span class="marquee__item marquee__item--outline">Борода</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Гоління</span><span class="marquee__dot"></span>
+          <span class="marquee__item marquee__item--outline">Тонування</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Укладка</span><span class="marquee__dot"></span>
+          <span class="marquee__item marquee__item--outline">Ваксинг</span><span class="marquee__dot"></span>
+        </div>
+        <div class="marquee__group">
+          <span class="marquee__item">Стрижки</span><span class="marquee__dot"></span>
+          <span class="marquee__item marquee__item--outline">Борода</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Гоління</span><span class="marquee__dot"></span>
+          <span class="marquee__item marquee__item--outline">Тонування</span><span class="marquee__dot"></span>
+          <span class="marquee__item">Укладка</span><span class="marquee__dot"></span>
+          <span class="marquee__item marquee__item--outline">Ваксинг</span><span class="marquee__dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div class="section-head about__head">
+          <p class="eyebrow" data-scramble>Про нас</p>
+          <h2 class="h2" id="about-title" data-split>Сучасний чоловічий барбершоп</h2>
+        </div>
+        <p class="about__text" data-reveal>Ми спеціалізуємося на чоловічих стрижках, оформленні бороди та голінні. Кожен барбер «Штабу» працює з урахуванням твоїх побажань, щоб підкреслити стиль і характер.</p>
+        <figure class="about__video" data-reveal>
+          <div class="about__video-box">
+            <div class="video-frame">
+              <video muted playsinline loop preload="none" width="540" height="960" poster="assets/img/walkthrough-poster.webp" aria-label="Відео без звуку: вхід з вулиці Воскресенської і зала барбершопу" data-video>
+                <source src="assets/video/shtab-walkthrough.mp4" type="video/mp4">
+              </video>
+              <button class="video-frame__toggle" type="button" aria-label="Відтворити відео" data-video-toggle>
+                <svg class="icon icon--play" aria-hidden="true"><use href="#i-play"/></svg>
+                <svg class="icon icon--pause" aria-hidden="true"><use href="#i-pause"/></svg>
+              </button>
+            </div>
+            <span class="corner corner--tl" aria-hidden="true"></span>
+            <span class="corner corner--tr" aria-hidden="true"></span>
+            <span class="corner corner--bl" aria-hidden="true"></span>
+            <span class="corner corner--br" aria-hidden="true"></span>
+          </div>
+          <figcaption class="about__caption">Від вулиці до крісла за 12 секунд</figcaption>
+        </figure>
+        <ul class="facts" role="list">
+          <li class="fact" data-reveal><span class="fact__value" data-count>4</span><span class="fact__label">барбери в команді</span></li>
+          <li class="fact" data-reveal><span class="fact__value" data-count>7</span><span class="fact__label">днів на тиждень, без вихідних</span></li>
+          <li class="fact" data-reveal><span class="fact__value" data-count>10</span><span class="fact__label">годин щодня, з 9:00 до 19:00</span></li>
+          <li class="fact" data-reveal><span class="fact__value" data-count>30</span><span class="fact__label">днів уперед відкритий запис онлайн</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Prices -->
+    <section class="section section--warm prices" id="prices" aria-labelledby="prices-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-scramble>Прайс</p>
+          <h2 class="h2" id="prices-title" data-split>Послуги та ціни</h2>
+          <p class="section-lead" data-reveal>Вартість залежить від рівня майстра. Старші барбери: Станіслав, Аліна та Ірма. Барбер: Юлія.</p>
+        </div>
+
+        <table class="price-table">
+          <caption class="visually-hidden">Ціни на послуги в гривнях</caption>
+          <thead>
+            <tr>
+              <th scope="col">Послуга</th>
+              <th scope="col">Барбер</th>
+              <th scope="col">Старший барбер</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><span class="svc">Стрижка</span><span class="svc-time">1 год</span></th>
+              <td><span class="price"><span data-price>500</span><span class="price__cur">₴</span></span></td>
+              <td><span class="price"><span data-price>600</span><span class="price__cur">₴</span></span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="svc">Борода</span><span class="svc-time">30 хв</span></th>
+              <td><span class="price"><span data-price>400</span><span class="price__cur">₴</span></span></td>
+              <td><span class="price"><span data-price>500</span><span class="price__cur">₴</span></span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="svc">Стрижка з бородою</span><span class="svc-time">1,5 год</span></th>
+              <td><span class="price"><span data-price>700</span><span class="price__cur">₴</span></span></td>
+              <td><span class="price"><span data-price>800</span><span class="price__cur">₴</span></span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="svc">Гоління голови (шейвер)</span><span class="svc-time">30 хв</span></th>
+              <td><span class="price"><span data-price>300</span><span class="price__cur">₴</span></span></td>
+              <td><span class="price"><span data-price>400</span><span class="price__cur">₴</span></span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="svc">Гоління голови (шейвер) + стрижка бороди</span><span class="svc-time">1 год</span></th>
+              <td><span class="price"><span data-price>500</span><span class="price__cur">₴</span></span></td>
+              <td><span class="price"><span data-price>600</span><span class="price__cur">₴</span></span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="svc">Ваксинг (ніс/брови)</span><span class="svc-time">15 хв</span></th>
+              <td><span class="price"><span data-price>150</span><span class="price__cur">₴</span></span></td>
+              <td><span class="price"><span data-price>150</span><span class="price__cur">₴</span></span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="svc">Укладка</span><span class="svc-time">20–30 хв</span></th>
+              <td><span class="price"><span data-price>200</span><span class="price__cur">₴</span></span></td>
+              <td><span class="price"><span data-price>200</span><span class="price__cur">₴</span></span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="svc">Тонування голови</span><span class="svc-time">30 хв</span></th>
+              <td><span class="price"><span data-price>500</span><span class="price__cur">₴</span></span></td>
+              <td><span class="price"><span data-price>500</span><span class="price__cur">₴</span></span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span class="svc">Тонування бороди</span><span class="svc-time">30 хв</span></th>
+              <td><span class="price"><span data-price>400</span><span class="price__cur">₴</span></span></td>
+              <td><span class="price"><span data-price>400</span><span class="price__cur">₴</span></span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="prices__cta" data-reveal>
+          <a class="btn btn--gold btn--lg" href="https://blknt.cc/ae1f47dc" target="_blank" rel="noopener">
+            Записатися онлайн
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          </a>
+          <p class="prices__note">Обери послугу, майстра і час за хвилину.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works -->
+    <section class="works" id="works" aria-labelledby="works-title">
+      <div class="works__pin" data-works-pin>
+        <div class="container works__head">
+          <div class="section-head">
+            <p class="eyebrow" data-scramble>Роботи</p>
+            <h2 class="h2" id="works-title" data-split>Свіжі стрижки з нашого крісла</h2>
+          </div>
+          <a class="link-arrow" href="https://www.instagram.com/shtab.barbershop/" target="_blank" rel="noopener" data-reveal>
+            <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
+            Більше робіт в Instagram
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          </a>
+        </div>
+        <div class="works__viewport" data-works-viewport tabindex="0" role="region" aria-label="Галерея робіт">
+          <ul class="works__track" role="list" data-works-track>
+            <li class="work">
+              <figure>
+                <div class="work__img"><img src="assets/img/works/work-6-600.webp" srcset="assets/img/works/work-6-600.webp 600w, assets/img/works/work-6-960.webp 960w" sizes="(min-width: 1024px) 420px, min(78vw, 340px)" width="960" height="1280" loading="lazy" decoding="async" alt="Чоловік у профіль: фейд і оформлена борода"></div>
+                <figcaption class="work__caption">Фейд і оформлена борода</figcaption>
+              </figure>
+            </li>
+            <li class="work">
+              <figure>
+                <div class="work__img"><img src="assets/img/works/work-1-600.webp" srcset="assets/img/works/work-1-600.webp 600w, assets/img/works/work-1-960.webp 960w" sizes="(min-width: 1024px) 420px, min(78vw, 340px)" width="960" height="1280" loading="lazy" decoding="async" alt="Коротка стрижка і густа борода, вигляд збоку"></div>
+                <figcaption class="work__caption">Коротка стрижка і густа борода</figcaption>
+              </figure>
+            </li>
+            <li class="work">
+              <figure>
+                <div class="work__img"><img src="assets/img/works/work-2-600.webp" srcset="assets/img/works/work-2-600.webp 600w, assets/img/works/work-2-960.webp 960w" sizes="(min-width: 1024px) 420px, min(78vw, 340px)" width="960" height="1280" loading="lazy" decoding="async" alt="Класична стрижка з проділом і фейдом"></div>
+                <figcaption class="work__caption">Класика з проділом</figcaption>
+              </figure>
+            </li>
+            <li class="work">
+              <figure>
+                <div class="work__img"><img src="assets/img/works/work-3-600.webp" srcset="assets/img/works/work-3-600.webp 600w, assets/img/works/work-3-960.webp 960w" sizes="(min-width: 1024px) 420px, min(78vw, 340px)" width="960" height="1280" loading="lazy" decoding="async" alt="Текстурна стрижка з чубчиком, вигляд у профіль"></div>
+                <figcaption class="work__caption">Текстура з чубчиком</figcaption>
+              </figure>
+            </li>
+            <li class="work">
+              <figure>
+                <div class="work__img"><img src="assets/img/works/work-4-600.webp" srcset="assets/img/works/work-4-600.webp 600w, assets/img/works/work-4-960.webp 960w" sizes="(min-width: 1024px) 420px, min(78vw, 340px)" width="960" height="1280" loading="lazy" decoding="async" alt="Подовжена стрижка з текстурою, вигляд збоку"></div>
+                <figcaption class="work__caption">Подовжена текстурна стрижка</figcaption>
+              </figure>
+            </li>
+            <li class="work">
+              <figure>
+                <div class="work__img"><img src="assets/img/works/work-5-600.webp" srcset="assets/img/works/work-5-600.webp 600w, assets/img/works/work-5-960.webp 960w" sizes="(min-width: 1024px) 420px, min(78vw, 340px)" width="960" height="1280" loading="lazy" decoding="async" alt="Коротка стрижка і доглянута сива борода"></div>
+                <figcaption class="work__caption">Коротка стрижка і борода</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statement -->
+    <section class="section statement" aria-label="Наш підхід">
+      <div class="container">
+        <p class="statement__text" data-words>Ми не стрижемо за шаблоном. Слухаємо, радимо і підкреслюємо твій стиль та характер.</p>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section team" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-scramble>Особовий склад</p>
+          <h2 class="h2" id="team-title" data-split>Барбери «Штабу»</h2>
+          <p class="section-lead" data-reveal>Обирай майстра під свій запит або записуйся до першого вільного.</p>
+        </div>
+        <ul class="team__grid" role="list">
+          <li class="barber">
+            <a class="barber__link" href="https://blknt.cc/ae1f47dc" target="_blank" rel="noopener">
+              <span class="barber__photo">
+                <img src="assets/img/team/stanislav.webp" width="256" height="341" alt="" loading="lazy" decoding="async">
+                <span class="barber__curtain" aria-hidden="true"></span>
+              </span>
+              <span class="barber__role">Старший барбер</span>
+              <h3 class="barber__name">Станіслав Таран</h3>
+              <span class="barber__cta">Записатися <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+            </a>
+          </li>
+          <li class="barber">
+            <a class="barber__link" href="https://blknt.cc/ae1f47dc" target="_blank" rel="noopener">
+              <span class="barber__photo">
+                <img src="assets/img/team/yuliia.webp" width="256" height="341" alt="" loading="lazy" decoding="async">
+                <span class="barber__curtain" aria-hidden="true"></span>
+              </span>
+              <span class="barber__role">Барбер</span>
+              <h3 class="barber__name">Юлія Баєнко</h3>
+              <span class="barber__cta">Записатися <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+            </a>
+          </li>
+          <li class="barber">
+            <a class="barber__link" href="https://blknt.cc/ae1f47dc" target="_blank" rel="noopener">
+              <span class="barber__photo">
+                <img src="assets/img/team/alina.webp" width="256" height="341" alt="" loading="lazy" decoding="async">
+                <span class="barber__curtain" aria-hidden="true"></span>
+              </span>
+              <span class="barber__role">Старший барбер</span>
+              <h3 class="barber__name">Аліна Зуй</h3>
+              <span class="barber__cta">Записатися <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+            </a>
+          </li>
+          <li class="barber">
+            <a class="barber__link" href="https://blknt.cc/ae1f47dc" target="_blank" rel="noopener">
+              <span class="barber__photo">
+                <img src="assets/img/team/irma.webp" width="256" height="341" alt="" loading="lazy" decoding="async">
+                <span class="barber__curtain" aria-hidden="true"></span>
+              </span>
+              <span class="barber__role">Старший барбер</span>
+              <h3 class="barber__name">Ірма Дробязко</h3>
+              <span class="barber__cta">Записатися <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="section booking" id="booking" aria-labelledby="booking-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow eyebrow--center" data-scramble>Запис</p>
+          <h2 class="h2" id="booking-title" data-split>Бронюй час за три кроки</h2>
+        </div>
+        <ol class="steps" role="list">
+          <li class="step" data-reveal>
+            <span class="step__num" data-step>01</span>
+            <h3 class="step__title">Обери послугу</h3>
+            <p class="step__text">Стрижка, борода, гоління або комплекс. Усі ціни є в прайсі.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num" data-step>02</span>
+            <h3 class="step__title">Обери майстра і час</h3>
+            <p class="step__text">Онлайн видно всі вільні вікна на 30 днів уперед.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num" data-step>03</span>
+            <h3 class="step__title">Приходь у Штаб</h3>
+            <p class="step__text">Вулиця Воскресенська, 15. Чекаємо щодня з 9:00 до 19:00.</p>
+          </li>
+        </ol>
+        <div class="booking__actions" data-reveal>
+          <a class="btn btn--gold btn--lg" href="https://blknt.cc/ae1f47dc" target="_blank" rel="noopener">
+            Записатися онлайн
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="tel:+380753050073">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+            Подзвонити
+          </a>
+          <a class="btn btn--ghost btn--lg" href="https://ig.me/m/shtab.barbershop" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-send"/></svg>
+            Написати в Direct
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gift certificate and cosmetics -->
+    <section class="section extras" aria-labelledby="extras-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-scramble>Ще у Штабі</p>
+          <h2 class="h2" id="extras-title" data-split>Подарунок і догляд</h2>
+        </div>
+        <div class="extras__grid">
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="assets/img/certificate-640.webp" srcset="assets/img/certificate-640.webp 640w, assets/img/certificate-1000.webp 1000w" sizes="(min-width: 768px) 50vw, 100vw" width="1000" height="750" loading="lazy" decoding="async" alt="Подарунковий сертифікат барбершопу «Штаб»">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Подарунковий сертифікат</h3>
+              <p class="card__text">Сума на твій вибір. Сертифікат діє 6 місяців на всі послуги та продукцію, потрібен попередній запис.</p>
+              <a class="link-arrow" href="tel:+380753050073">
+                Замовити за телефоном
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+              </a>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="assets/img/cosmetics-640.webp" srcset="assets/img/cosmetics-640.webp 640w, assets/img/cosmetics-1000.webp 1000w" sizes="(min-width: 768px) 50vw, 100vw" width="1000" height="750" loading="lazy" decoding="async" alt="Мило для бороди «Борода» у фірмових коробках «Штабу»">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">Чоловіча косметика</h3>
+              <p class="card__text">Мило для бороди з ароматами апельсину, лимонної трави та м’яти, бальзами для бороди Barbados. Барбер підкаже, що підійде саме тобі.</p>
+              <a class="link-arrow" href="https://www.instagram.com/shtab.barbershop/" target="_blank" rel="noopener">
+                Дивитися в Instagram
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--warm faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <div class="section-head faq__head">
+          <p class="eyebrow" data-scramble>Питання</p>
+          <h2 class="h2" id="faq-title" data-split>Часті питання</h2>
+          <p class="section-lead" data-reveal>Не бачиш відповіді? Телефонуй: <a class="text-link" href="tel:+380753050073">075 305 00 73</a></p>
+        </div>
+        <div class="faq__list">
+          <details class="faq__item" name="faq" data-reveal>
+            <summary class="faq__q">Як записатися до барбера?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p>Найшвидше онлайн: обираєш послугу, майстра і зручний час. Також можна подзвонити за номером 075 305 00 73 або написати нам у Direct в Instagram.</p></div>
+          </details>
+          <details class="faq__item" name="faq" data-reveal>
+            <summary class="faq__q">Скільки коштує чоловіча стрижка?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p>Стрижка у барбера коштує 500&nbsp;₴, у старшого барбера 600&nbsp;₴. Стрижка з бородою коштує 700&nbsp;₴ та 800&nbsp;₴ відповідно.</p></div>
+          </details>
+          <details class="faq__item" name="faq" data-reveal>
+            <summary class="faq__q">Чим барбер відрізняється від старшого барбера?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p>Досвідом, від якого залежить вартість послуг. Старші барбери: Станіслав, Аліна та Ірма. Барбер: Юлія.</p></div>
+          </details>
+          <details class="faq__item" name="faq" data-reveal>
+            <summary class="faq__q">Скільки триває стрижка?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p>Близько години. Стрижка з бородою займає до півтори години, оформлення бороди близько 30 хвилин.</p></div>
+          </details>
+          <details class="faq__item" name="faq" data-reveal>
+            <summary class="faq__q">Ви працюєте у вихідні?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p>Так, ми працюємо щодня з 9:00 до 19:00 без вихідних.</p></div>
+          </details>
+          <details class="faq__item" name="faq" data-reveal>
+            <summary class="faq__q">Чи можна обрати конкретного майстра?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p>Так. Під час запису онлайн обери барбера зі списку. Якщо майстер неважливий, система запропонує першого вільного.</p></div>
+          </details>
+          <details class="faq__item" name="faq" data-reveal>
+            <summary class="faq__q">На скільки днів наперед можна записатися?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p>Запис онлайн відкритий на 30 днів уперед.</p></div>
+          </details>
+          <details class="faq__item" name="faq" data-reveal>
+            <summary class="faq__q">Чи є подарункові сертифікати?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p>Так. Сума на твій вибір, сертифікат діє 6 місяців на всі послуги та продукцію. Замовити можна за телефоном 075 305 00 73.</p></div>
+          </details>
+          <details class="faq__item" name="faq" data-reveal>
+            <summary class="faq__q">Де ви знаходитесь?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__a"><p>Суми, вулиця Воскресенська, 15. Карта і маршрут є в розділі контактів нижче.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="section contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="container contacts__grid">
+        <div class="contacts__info">
+          <div class="section-head">
+            <p class="eyebrow" data-scramble>Контакти</p>
+            <h2 class="h2" id="contacts-title" data-split>Чекаємо у Штабі</h2>
+          </div>
+          <ul class="contact-list" role="list">
+            <li class="contact" data-reveal>
+              <span class="contact__icon"><svg class="icon" aria-hidden="true"><use href="#i-map-pin"/></svg></span>
+              <div>
+                <p class="contact__label">Адреса</p>
+                <p class="contact__value">Суми, вул. Воскресенська, 15</p>
+                <a class="link-arrow" href="https://www.google.com/maps/dir/?api=1&amp;destination=вул.+Воскресенська,+15,+Суми,+40000" target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-navigation"/></svg>
+                  Прокласти маршрут
+                </a>
+              </div>
+            </li>
+            <li class="contact" data-reveal>
+              <span class="contact__icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></span>
+              <div>
+                <p class="contact__label">Графік</p>
+                <p class="contact__value">Щодня з 9:00 до 19:00</p>
+                <p class="contact__status"><span class="status-dot" data-open-dot aria-hidden="true"></span><span data-open-status>Без вихідних</span></p>
+              </div>
+            </li>
+            <li class="contact" data-reveal>
+              <span class="contact__icon"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <div>
+                <p class="contact__label">Телефон</p>
+                <a class="contact__value" href="tel:+380753050073">+38 075 305 00 73</a>
+              </div>
+            </li>
+            <li class="contact" data-reveal>
+              <span class="contact__icon"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></span>
+              <div>
+                <p class="contact__label">Соцмережі</p>
+                <p class="contact__value">
+                  <a class="text-link" href="https://www.instagram.com/shtab.barbershop/" target="_blank" rel="noopener">Instagram</a>
+                  <span aria-hidden="true"> · </span>
+                  <a class="text-link" href="https://www.threads.com/@shtab.barbershop" target="_blank" rel="noopener">Threads</a>
+                </p>
+              </div>
+            </li>
+          </ul>
+          <a class="btn btn--gold btn--lg contacts__cta" href="https://blknt.cc/ae1f47dc" target="_blank" rel="noopener" data-reveal>
+            Записатися онлайн
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          </a>
+        </div>
+        <div class="contacts__map" data-reveal>
+          <iframe title="Карта: Штаб Барбершоп, Суми, вул. Воскресенська, 15" src="https://www.google.com/maps?q=вул.+Воскресенська,+15,+Суми,+40000&amp;z=17&amp;hl=uk&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="footer__logo" href="#top" aria-label="Штаб Барбершоп, на початок сторінки">
+          <img src="assets/img/logo.svg" alt="" width="829" height="408" loading="lazy">
+        </a>
+        <p class="footer__motto">Командний пункт твого стилю</p>
+      </div>
+      <nav class="footer__nav" aria-label="Навігація у футері">
+        <ul role="list">
+          <li><a href="#prices">Ціни</a></li>
+          <li><a href="#works">Роботи</a></li>
+          <li><a href="#team">Барбери</a></li>
+          <li><a href="#faq">Питання</a></li>
+          <li><a href="#contacts">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contacts">
+        <a href="tel:+380753050073">+38 075 305 00 73</a>
+        <p>Суми, вул. Воскресенська, 15</p>
+        <p>Щодня з 9:00 до 19:00</p>
+      </div>
+      <div class="footer__social">
+        <a class="icon-btn" href="https://www.instagram.com/shtab.barbershop/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.threads.com/@shtab.barbershop" target="_blank" rel="noopener" aria-label="Threads">
+          <svg class="icon" aria-hidden="true"><use href="#i-threads"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span data-year>2026</span> Штаб Барбершоп, Суми</p>
+      <a href="https://blknt.cc/ae1f47dc" target="_blank" rel="noopener">Запис онлайн</a>
+    </div>
+  </footer>
+
+  <div class="mobile-cta" data-mobile-cta>
+    <a class="btn btn--gold btn--lg mobile-cta__book" href="https://blknt.cc/ae1f47dc" target="_blank" rel="noopener">Записатися онлайн</a>
+    <a class="mobile-cta__call" href="tel:+380753050073" aria-label="Подзвонити: 075 305 00 73">
+      <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+    </a>
+  </div>
+</body>
+</html>

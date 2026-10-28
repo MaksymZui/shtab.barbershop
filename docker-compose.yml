@@ -1,0 +1,9 @@
+# Local preview: http://localhost:8080 (files are mounted, edits show up on reload)
+services:
+  web:
+    image: nginx:1.27-alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./public:/usr/share/nginx/html:ro
+      - ./deploy/nginx.conf:/etc/nginx/conf.d/default.conf:ro
